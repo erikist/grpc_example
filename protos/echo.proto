@@ -1,5 +1,7 @@
 syntax = "proto3";
-option go_package = "/echo";
+package grpc_example.echo;
+
+option go_package = "./;echo";
 
 service Echo {
   rpc Echo(Message) returns (Message) {}
